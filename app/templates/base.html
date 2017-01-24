@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% block head %}
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
+	<title>{% block title %}{%endblock%} - Library Application</title>
+	{% endblock %}
+</head>
+<body>
+	<div id="pageWrapper">
+		{%block pagecontent%}{% endblock %}
+	</div> 
+	<footer>
+		&copy; Copyright 2016 by <span>Mbarak Mbigo</span>
+	</footer>
+</body>
+</html>
