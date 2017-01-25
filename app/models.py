@@ -1,5 +1,5 @@
 # Model Module: handles all data creation and retrieval
-from flask.ext.sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 class Model(object):
 	"""docstring for Model"""
 	def __init__(self):
