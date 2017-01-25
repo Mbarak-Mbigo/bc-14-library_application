@@ -1,5 +1,6 @@
 #demo run before final structure
-from flask import Flask, render_template, request
+import os
+rom flask import Flask, render_template, request
 from flask.ext.sqlalchemy import SQLAlchemy
 from app.model.model import Model
 
