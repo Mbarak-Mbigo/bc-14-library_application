@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<title>MyPage</title>
+		<link rel="stylesheet" type="text/css" href="../../static/style.css">
+	</head>
+	<body>
+		<div id="pageWrapper">
+			<header>
+				<nav>
+					<ul>
+						<li id="title"><a href="#">iLibrary</a></li>
+						<ul>
+							<li><a href="../signin.html">Sign Out</a></li>
+						</ul> 
+					</ul>
+				</nav>
+			</header>
+			<section id="pageContent">
+				<form id="addbook">
+					<input type="number" name="bookId" min="1" placeholder="Book Id" required> <br>
+					<input type="text" name="Title" placeholder="Title" required><br>
+					<input type="text" name="isbn" placeholder="ISBN" required><br>
+					<input type="text" name="category" placeholder="Book Category" required><br>
+					<input type="text" name="authors" placeholder="Author(s)" required><br>
+					<input type="date" name="acqdate" placeholder="Acquired Date" required><br>
+					<input type="text" name="status" placeholder="Book Status" required><br>
+					<input type="text" name="Title" placeholder="Available?" required><br>
+					<input type="text" name="currentborrower" placeholder="CurrentBorrower" required><br>
+					<input type="submit" name="addbook" value="Add Book">
+				</form>
+			</section>
+			<footer>
+			</footer>
+		</div>		
+	</body>
+</html>

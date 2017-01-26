@@ -1,0 +1,14 @@
+{% import "bootstrap/utils.html" as utils %}
+{% import "bootstrap.html/wtf.html as wtf%}
+{% block title %}Login{% endblock %}
+{% block body %}
+<div class="content-section">
+	<br/>
+	<div class="center">
+		<h1>Login to the System</h1>
+		<br/>
+		{{wtf.quick_form(form)}}
+	</div>
+</div>
+
+{% endblock %}

@@ -1,10 +1,10 @@
-from flask import Flask, request, render_template
-app = Flask(__name__, template_folder='app/templates',static_folder='app/static')
+import os
+from app import create_app
 
-@app.route('/')
-def index():
-    return render_template('signin.html')
-
+config_name = os.getenv('FLASK_CONFIG')
+app = create_app(config_name)
 
 if '__main__' == __name__:
 	app.run()
+
+

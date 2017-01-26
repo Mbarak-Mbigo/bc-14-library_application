@@ -1,37 +1,30 @@
-<!-- Signin from: default page of application-->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<link rel="stylesheet" type="text/css" href="../static/style.css">
-	<title>Sign up Library Application</title>
-</head>
-<body>
-	<div id="pageWrapper">
-		<header class="consistentheader">
-			<!-- App title -->
-			<p>iLibrary</p>
-			<!-- Create Sign in and Sign up buttons -->
-			<ul> <li><a href="#">Sign In</a></li> <li><a href="#">Sign In</a></li> </ul>
-			<!-- Sign in form -->
-		</header>
-		<section id="content">
-			<!-- Specific content on specific user and page -->
-			<form method="POST" action=''>
+<!doctype html>
+<html>
+	<head>
+		<title>MyPage</title>
+		<link rel="stylesheet" type="text/css" href="../static/signin.css">
+
+	</head>
+	<body>
+		<div id="pageWrapper">
+			<header>
+				<nav>
+					<ul>
+						<li id="title"><a href="#">iLibrary</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section id="pageContent">
+				<form method="POST" action='auth'>
 				<fieldset>
-					<label for id="username">Username: </label>
-					<input type="text" name="username" id="username" placeholder="User Name">
-					<label for id="password">Password: </label>
-					<input type="password" name="password" id="password" placeholder="Password">
-					<input type="button" name="signbtn" id="signinbtn" value="Continue">
+					<input type="text" name="username" id="username" placeholder="username" required> <br>
+					<input type="password" name="password" id="password" placeholder="password" required><br>
+					<input type="submit" name="submit" id="signinbtn" value="Sign In">
 				</fieldset>
 			</form>
-		</section>
-		<nav id"navigation">
-			<!-- Navigation links for specific pages -->
-		</nav>
-	</div> 
-	<footer>
-		&copy; Copyright 2016 by <span>Mbarak Mbigo</span>
-	</footer>
-</body>
+			</section>
+			<footer>
+			</footer>
+		</div>		
+	</body>
 </html>
