@@ -36,6 +36,16 @@ Due to some constraints I was not able to add the following features:
 9. And surchage for lately returned books (Admin puts the fee)
 
 
+Program set up:
+Before running the application ensure you you install the supporting modules
+from requirements.txt
+Then ensure you have a postgres v9.3 or later.
+Install psycopg2 adapter
+
+Currently it is under development so ensure you export the following environment variables first
+$ export FLASK_CONFIG=development
+$ export FLASK_APP=runapp.py
+$ flask run
 
 
 The application is run by hosting it locally or on the cloud and accessing it 
